@@ -63,7 +63,12 @@ public class CommitMessageAction implements IssueAction {
 
         for(Comment c: comments){
             String commentBody = atlassianWikiRenderer.render(c.getBody(),null).toString();
-            String foldedMessage = "<p>"+c.getAuthorApplicationUser().getUsername() + " / " + c.getCreated()+"</p>";
+            String username = c.getAuthorApplicationUser().getUsername();
+            username ="<a class=\"user-hover user-avatar\" rel=\"" + username
+                    + "\"id=\"userinfo_link\" href=\"/secure/ViewProfile.jspa?name=" + username+"\">"
+                    + username
+                    + "</a>";
+            String foldedMessage = "<p>"+ username + " / " + c.getCreated()+"</p>";
 
             commentBody = foldedMessage + "\n" +commentBody;
             commitMessaeHtml = commitMessaeHtml
