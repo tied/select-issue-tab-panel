@@ -1,17 +1,12 @@
-package com.lge.svl.jira.plugins;
+package com.lge.svl.jira.plugins.selectissuetabpanel;
 
-import com.atlassian.event.api.EventPublisher;
 import com.atlassian.jira.component.ComponentAccessor;
-import com.atlassian.jira.config.properties.ApplicationProperties;
 import com.atlassian.jira.issue.comments.Comment;
 import com.atlassian.jira.issue.comments.CommentManager;
-import com.atlassian.jira.issue.fields.renderer.wiki.AtlassianWikiRenderer;
-import com.atlassian.jira.util.velocity.VelocityRequestContextFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.atlassian.jira.plugin.issuetabpanel.AbstractIssueTabPanel;
 import com.atlassian.jira.plugin.issuetabpanel.IssueTabPanel;
-import com.atlassian.jira.issue.tabpanels.GenericMessageAction;
 import com.atlassian.jira.issue.Issue;
 import com.atlassian.crowd.embedded.api.User;
 

@@ -1,8 +1,8 @@
 package ut.com.lge.svl.jira.plugins;
 
 import org.junit.Test;
-import com.lge.svl.jira.plugins.MyPluginComponent;
-import com.lge.svl.jira.plugins.MyPluginComponentImpl;
+import com.lge.svl.jira.plugins.selectissuetabpanel.MyPluginComponent;
+import com.lge.svl.jira.plugins.selectissuetabpanel.MyPluginComponentImpl;
 
 import static org.junit.Assert.assertEquals;
 

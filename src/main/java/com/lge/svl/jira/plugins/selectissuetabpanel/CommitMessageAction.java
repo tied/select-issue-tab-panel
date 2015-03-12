@@ -1,4 +1,4 @@
-package com.lge.svl.jira.plugins;
+package com.lge.svl.jira.plugins.selectissuetabpanel;
 
 import com.atlassian.jira.issue.comments.Comment;
 import com.atlassian.jira.plugin.issuetabpanel.IssueAction;

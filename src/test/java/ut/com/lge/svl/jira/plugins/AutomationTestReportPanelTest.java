@@ -3,7 +3,6 @@ package ut.com.lge.svl.jira.plugins;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import com.lge.svl.jira.plugins.AutomationTestReportPanel;
 
 import static org.mockito.Mockito.*;
 

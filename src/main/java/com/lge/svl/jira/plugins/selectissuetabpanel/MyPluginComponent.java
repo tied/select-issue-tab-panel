@@ -1,4 +1,4 @@
-package com.lge.svl.jira.plugins;
+package com.lge.svl.jira.plugins.selectissuetabpanel;
 
 public interface MyPluginComponent
 {

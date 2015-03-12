@@ -19,12 +19,12 @@
     <context>selectIssueTabPanel</context>
   </web-resource>
   <!-- publish our component -->
-  <component key="myPluginComponent" class="com.lge.svl.jira.plugins.MyPluginComponentImpl" public="true">
-    <interface>com.lge.svl.jira.plugins.MyPluginComponent</interface>
+  <component key="myPluginComponent" class="com.lge.svl.jira.plugins.selectissuetabpanel.MyPluginComponentImpl" public="true">
+    <interface>com.lge.svl.jira.plugins.selectissuetabpanel.MyPluginComponent</interface>
   </component>
   <!-- import from the product container -->
   <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties"/>
-  <issue-tabpanel key="automation-test-report-panel" name="Automation Test Report Panel" i18n-name-key="automation-test-report-panel.name" class="com.lge.svl.jira.plugins.AutomationTestReportPanel">
+  <issue-tabpanel key="automation-test-report-panel" name="Automation Test Report Panel" i18n-name-key="automation-test-report-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.AutomationTestReportPanel">
     <description key="automation-test-report-panel.description">The Automation Test Report Panel Plugin</description>
     <label key="automation-test-report-panel.label"></label>
     <order>10</order>
