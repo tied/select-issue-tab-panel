@@ -9,7 +9,7 @@
         <name>LG Electronics</name>
         <url>http://www.lge.com/</url>
     </organization>
-    <name>selectIssueTabPanel</name>
+    <name>SVL JIRA Select Issue Tab Panel</name>
     <description>This is the com.lge.svl.jira.plugins:selectIssueTabPanel plugin for Atlassian JIRA.</description>
     <packaging>atlassian-plugin</packaging>
     <dependencies>

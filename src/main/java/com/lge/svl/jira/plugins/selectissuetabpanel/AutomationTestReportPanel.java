@@ -16,6 +16,7 @@ import java.util.List;
 public class AutomationTestReportPanel extends AbstractIssueTabPanel implements IssueTabPanel
 {
     private static final Logger log = LoggerFactory.getLogger(AutomationTestReportPanel.class);
+    private  static final String automationTestUser = "Automation Lab";
 
     public List getActions(Issue issue, User remoteUser) {
         CommentManager commentManager = ComponentAccessor.getCommentManager();
@@ -24,14 +25,28 @@ public class AutomationTestReportPanel extends AbstractIssueTabPanel implements 
         List<Comment> comments = commentManager.getComments(issue);
 
         for(Comment c : comments){
-            commitMessageAction.addComment(c);
+            if ( c.getAuthorApplicationUser().getUsername().equals(automationTestUser)) {
+                commitMessageAction.addComment(c);
+            }
         }
         return Collections.singletonList(commitMessageAction);
-        //return Collections.singletonList(new CommitMessageAction("This is a message brought to you by the Automation Test Report Panel 123"));
     }
 
     public boolean showPanel(Issue issue, User remoteUser)
     {
-        return true;
+
+        CommentManager commentManager = ComponentAccessor.getCommentManager();
+        CommitMessageAction commitMessageAction = new CommitMessageAction("Commit Message");
+
+        boolean displayPanel = false;
+        List<Comment> comments = commentManager.getComments(issue);
+        for(Comment c : comments){
+            if ( c.getAuthorApplicationUser().getUsername().equals(automationTestUser)) {
+                displayPanel = true;
+                break;
+            }
+        }
+
+        return displayPanel;
     }
 }
