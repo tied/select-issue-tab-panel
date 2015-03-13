@@ -7,7 +7,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.atlassian.jira.plugin.issuetabpanel.AbstractIssueTabPanel;
 import com.atlassian.jira.plugin.issuetabpanel.IssueTabPanel;
-import com.atlassian.jira.issue.tabpanels.GenericMessageAction;
 import com.atlassian.jira.issue.Issue;
 import com.atlassian.crowd.embedded.api.User;
 
