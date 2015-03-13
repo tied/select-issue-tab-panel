@@ -27,17 +27,23 @@
   <issue-tabpanel key="automation-test-report-panel" name="Automation Test Report Panel" i18n-name-key="automation-test-report-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.AutomationTestReportPanel">
     <description key="automation-test-report-panel.description">The Automation Test Report Panel Plugin</description>
     <label key="automation-test-report-panel.label"/>
-<!--
+    <!--
     <order>10</order>
 -->
     <resource type="velocity" name="view" location="templates/tabpanels/automation-test-report-panel.vm"/>
   </issue-tabpanel>
   <issue-tabpanel key="build-report-panel" name="Build Report Panel" i18n-name-key="build-report-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.BuildReportPanel">
     <description key="build-report-panel.description">The Build Report Panel Plugin</description>
-    <label key="build-report-panel.label"></label>
-<!--
+    <label key="build-report-panel.label"/>
+    <!--
     <order>10</order>
 -->
     <resource type="velocity" name="view" location="templates/tabpanels/build-report-panel.vm"/>
+  </issue-tabpanel>
+  <issue-tabpanel key="comments-by-developer-panel" name="Comments By Developer Panel" i18n-name-key="comments-by-developer-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.CommentsByDeveloperPanel">
+    <description key="comments-by-developer-panel.description">The Comments By Developer Panel Plugin</description>
+    <label key="comments-by-developer-panel.label"></label>
+    <order>10</order>
+    <resource type="velocity" name="view" location="templates/tabpanels/comments-by-developer-panel.vm"/>
   </issue-tabpanel>
 </atlassian-plugin>
