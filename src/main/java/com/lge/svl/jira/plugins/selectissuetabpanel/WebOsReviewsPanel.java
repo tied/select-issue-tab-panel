@@ -9,17 +9,27 @@ import com.atlassian.jira.issue.Issue;
 import com.atlassian.crowd.embedded.api.User;
 import java.util.Collections;
 import java.util.List;
+import org.apache.http.client.*;
 
 public class WebOsReviewsPanel extends AbstractIssueTabPanel implements IssueTabPanel
 {
     private static final Logger log = LoggerFactory.getLogger(WebOsReviewsPanel.class);
 
     public List getActions(Issue issue, User remoteUser) {
-        return Collections.singletonList(new GenericMessageAction("This is a message brought to you by the Web Os Reviews Panel"));
+        String message = "";
+        message += "Issue  Key : " + issue.getKey() + "<br/>\n";
+        message += "Project Key : " + issue.getProjectObject().getKey()+ "<br/>\n";
+        return Collections.singletonList(new GenericMessageAction(message.toString()));
     }
 
     public boolean showPanel(Issue issue, User remoteUser)
     {
-        return true;
+        boolean returnValue = false;
+        String issueKey  = issue.getKey();
+        String issueProjectKey = issue.getProjectObject().getKey();
+        if ( "BHV".equals(issueProjectKey)) {
+            returnValue = true;
+        }
+        return returnValue;
     }
 }
