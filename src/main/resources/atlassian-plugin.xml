@@ -42,8 +42,16 @@
   </issue-tabpanel>
   <issue-tabpanel key="comments-by-developer-panel" name="Comments By Developer Panel" i18n-name-key="comments-by-developer-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.CommentsByDeveloperPanel">
     <description key="comments-by-developer-panel.description">The Comments By Developer Panel Plugin</description>
-    <label key="comments-by-developer-panel.label"></label>
+    <label key="comments-by-developer-panel.label"/>
     <order>10</order>
     <resource type="velocity" name="view" location="templates/tabpanels/comments-by-developer-panel.vm"/>
+  </issue-tabpanel>
+  <issue-tabpanel key="web-os-reviews-panel" name="Web Os Reviews Panel" i18n-name-key="web-os-reviews-panel.name" class="com.lge.svl.jira.plugins.selectissuetabpanel.WebOsReviewsPanel">
+    <description key="web-os-reviews-panel.description">The Web Os Reviews Panel Plugin</description>
+    <label key="web-os-reviews-panel.label"></label>
+<!--
+    <order>10</order>
+-->
+    <resource type="velocity" name="view" location="templates/tabpanels/web-os-reviews-panel.vm"/>
   </issue-tabpanel>
 </atlassian-plugin>
